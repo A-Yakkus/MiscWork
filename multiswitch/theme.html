@@ -1,0 +1,60 @@
+<!doctype>
+<html>
+<head>
+<title>Multi_Switch</title>
+<link rel="stylesheet" type="text/css" href="styles/styles.css" />
+<link rel="icon" href="media/imgs/logo.png" />
+<meta name="author" content="Jack Stevenson" />
+<meta name="description" content="Gear in Rear" />
+<meta charset="UTF-8" />
+<meta name="keywords" content="" />
+<script src="js/jquery.min.js" type="text/javascript"></script>
+<script src="js/changeColor.js" type="text/javascript"></script>
+</head>
+<body class="bgcolorclass">
+<!--<noscript>
+<h1 class="nojs">THIS SITE REQUIRES JAVASCRIPT. PLEASE ENABLE JAVASCRIPT TO ACCESS THE CONTENT</h1>
+</noscript>-->
+<nav class="fgcolorBclass">
+<!--
+TODO make icons when screensize is mobile 
+TODO restrict front and bck access
+-->
+<ul id="nav-list">
+<img id="navBarLogo" src="media/imgs/logo.png">
+  |  
+<wrapper>
+<li><a id="linkHome" href="index.html">Home</a></li>  |  
+<li><a id="linkProducts" href="product.html">Products</a></li>  |  
+<li><a id="linkAbout" href="about.html">About</a></li>  |  
+<li><a id="linkUserHome" href="theme.html">Theme</a></li>  |   
+<li><a id="linkUserBasket" href="basket.html">My Basket</a></li>  |  
+</wrapper>
+</ul>
+</nav>
+<main>
+<section id="theme" class="inline round left fgcolorBclass">
+<p class="buffer textcolorclass">Here at Multi_Switch, we believe in customizing your experiance with us. Hence we allow you to change how the site looks, as you may not like our white and blue colour scheme.<br>
+On the right there are 4 options:<br>
+<strong>Background Colour</strong>:Change the colour of the background.<br>
+<strong>Foreground Colour Two</strong>:Change the color of the Navigation background and the background of the left hand section.<br>
+<strong>Foreground Colour Two</strong>:Change the color of the Navigation background and the background of the left hand section.<br>
+<strong>Text Colour</strong>:Change the color of the text displayed on the page.</p>
+</section>
+<section id="colorChanger" class="inline round right fgcolorAclass">
+<form action="javascript:void(1)">
+<label for="bgcolor" name="bgcolor" class="textcolorclass">Background Colour:</label>
+<input id="bgcolor" type="color" value="#FFFFFF" name="bgcolor" class="right"/><br><br>
+<label for="fgcolorA" name="fgcolorA" class="textcolorclass">Foreground Colour One:</label>
+<input id="fgcolorA" type="color" value="#2196f3" name="fgcolorA" class="right"/><br><br>
+<label for="fgcolorB" name="fgcolorB" class="textcolorclass">Foreground Colour Two:</label>
+<input id="fgcolorB" type="color" value="#0d47a1" name="fgcolorB" class="right"/><br><br>
+<label for="textcolor" name="textcolor" class="textcolorclass">Text Colour:</label>
+<input id="textcolor" type="color" value="#FFFFFF" name="textcolor" class="right"/><br><br>
+</form>
+</section>
+</main>
+<footer id="site-footer">
+</footer>
+</body>
+</html>

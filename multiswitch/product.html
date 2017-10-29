@@ -1,0 +1,62 @@
+<!doctype>
+<html>
+<head>
+<title>Multi_Switch</title>
+<link rel="stylesheet" type="text/css" href="styles/styles.css" />
+<link rel="icon" href="media/imgs/logo.png" />
+<meta name="author" content="Jack Stevenson" />
+<meta name="description" content="Gear in Rear" />
+<meta charset="UTF-8" />
+<meta name="keywords" content="" />
+<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/babylonjs/2.5/babylon.min.js" type="text/javascript"></script>
+</head>
+<body class="textcolorclass bgcolorclass">
+<!--<noscript>
+<h1 class="nojs">THIS SITE REQUIRES JAVASCRIPT. PLEASE ENABLE JAVASCRIPT TO ACCESS THE CONTENT</h1>
+</noscript>-->
+<nav class="fgcolorBClass">
+<!--
+TODO make icons when screensize is mobile 
+TODO restrict front and bck access
+-->
+<ul id="nav-list">
+<img id="navBarLogo" src="media/imgs/logo.png">
+  |  
+<wrapper>
+<li><a id="linkHome" href="index.html">Home</a></li>  |  
+<li><a id="linkProducts" href="product.html">Products</a></li>  |  
+<li><a id="linkAbout" href="about.html">About</a></li>  |  
+<li><a id="linkUserHome" href="theme.html">Theme</a></li>  |  
+<li><a id="linkUserBasket" href="basket.html">My Basket</a></li>  |  
+</wrapper>
+</ul>
+</nav>
+<main>
+<section id="basket" class="left round fgcolorBClass">
+<section id="productsList" class="left fgcolorAClass round">
+<ul id="productList">
+</ul>
+</section>
+<section id="productInfo" class="right fgcolorAClass round">
+<p id="productName"></p>
+<p id="productDescription"></p>
+<p id="productPrice"></p>
+<div>
+<label for="productColor" name="productColor" class="textcolorclass">Part Colour:</label><input type="color" id="productColor" value="#FFFFFF"></input>
+</div>
+<canvas id="model"></canvas><br>
+<button id="AddToBasket">AddToBasket</button>
+</section>
+</section>
+<aside id="price" class="right round fgcolorAClass">
+</aside>
+</main>
+<footer id="site-footer">
+</footer>
+<script src="js/changeColor.js" type="text/javascript"></script>
+<script src="js/homePopulation.js" type="text/javascript"></script>
+<script src="js/productHelper.js" type="text/javascript"></script>
+<script src="js/modelHelper.js" type="text/javascript"></script>
+</body>
+</html>
